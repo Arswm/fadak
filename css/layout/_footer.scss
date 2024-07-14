@@ -1,0 +1,225 @@
+@import '../base/variables';
+
+footer {
+    background: linear-gradient(to bottom, #313032, #1d1d1d);
+
+
+}
+
+.footer {
+
+    &_top {
+        display: flex;
+    }
+
+    &_bottom {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+
+        .paragraph {
+            text-align: justify;
+            overflow: hidden;
+            max-height: 11rem;
+            transition: max-height 0.4s;
+            color: $white_color;
+        }
+
+        &_item {
+            line-height: 2.25;
+        }
+    }
+
+    &_top {
+        gap: 2rem;
+    }
+
+    &_top_item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: $white_color;
+        padding: 1rem;
+        border: 2px solid #f5f5f5;
+        border-radius: 1rem;
+        box-shadow: 0px 2px 7px -5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 4rem;
+            height: 4rem;
+        }
+
+    }
+
+    &_middle {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    &_middle_item {
+        display: flex;
+        flex-direction: column;
+        color: $white_color;
+        padding: 1rem;
+        &_last {}
+
+        &_title {
+            font-size: 1.2em;
+            font-weight: 700;
+            border-bottom: solid 2px $white_color;
+            color: $white_color;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+        .fa-circle {
+            font-size: 0.6rem;
+        }
+
+
+        a {
+            color: $white_color;
+        }
+
+        ul {
+            list-style: disc;
+        }
+
+        li::marker {
+            color: $white_color
+        }
+
+        li {
+            padding: 0.3rem 0rem;
+        }
+
+        li:hover {
+            &::marker {
+                color: $primary_color;
+            }
+        }
+    }
+
+    &_bottom {
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+
+        .opener {
+            cursor: pointer;
+            color: $primary_color;
+        }
+
+        .paragraph.active {
+            max-height: 100rem;
+
+        }
+    }
+
+    &_bottom_item {
+        flex-basis: 70%;
+    }
+
+    &_bottom_image_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        max-height: 16rem;
+
+    }
+
+    &_bottom_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    &_copyright {
+        border-top: 2px solid rgb(255, 253, 253);
+        padding-top: 1rem;
+        color: $white_color;
+    }
+}
+
+@media (max-width:996px) {
+    .footer {
+        &_bottom {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &_top {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        &_middle {
+            grid-template-columns: 1fr 1fr;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+
+            &_item {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+            }
+        }
+
+        &_bottom {
+            flex-direction: column;
+            gap: 1rem;
+
+            &_item {
+                text-align: center;
+                padding: 1rem 0rem;
+            }
+
+            &_image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                justify-self: center;
+
+
+            }
+
+        }
+
+        &_copyright {
+            text-align: center;
+            color: $white_color;
+        }
+    }
+}
