@@ -1,15 +1,1426 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/home/home.css">
-</head>
-<body>
-    <header>
-        
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/home/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="./public/images/global/fadak-logo.svg" alt="" title="" />
+      </div>
+
+      <nav class="header-nav">
+        <ul class="header-nav-links">
+          <li>
+            <a class="header-nav-links-item active" href="#">
+              <img
+                src="./public/images/global/shape-active-nav.svg"
+                alt=""
+                title=""
+              />
+              خانه
+            </a>
+          </li>
+          <li>
+            <a class="header-nav-links-item" href="#"> خدمات </a>
+          </li>
+          <li>
+            <a class="header-nav-links-item" href="#"> مقالات </a>
+          </li>
+          <li>
+            <a class="header-nav-links-item" href="#"> درباره </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-primary" href="#">
+           <i class="far fa-user"></i>
+          ورود / ثبت نام
+        </a>
+        <a class="btn btn-secondary" href="#">
+          <i class="fa fa-phone"></i>
+          ورود / ثبت نام
+        </a>
+      </div>
     </header>
-</body>
+
+    <main>
+      <section class="home-hero">
+        <div class="swiper home-hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./public/images/home/icecream.jpg" alt="" title="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/images/home/icecream.jpg" alt="" title="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/images/home/icecream.jpg" alt="" title="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-seperator wrapper-md"></div>
+
+      <section class="home-tabs wrapper-md">
+        <div class="container">
+          <div class="row">
+            <div class="shared-title">
+              <div class="shared-title-image">
+                <img
+                  src="./public/images/global/shape-title.svg"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="shared-title-header">
+                <h2 class="shared-title-heading">محصولات عمده</h2>
+                <p class="shared-title-subheading">ارسال به تمام شهرستان ها</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-9">
+              <div class="home-tabs-category">
+                <a
+                  data-target="#category-tab-1"
+                  class="home-tabs-category-item active"
+                >
+                  <img
+                    class="normal"
+                    src="./public/images/home/home-ice-cream-normal.svg"
+                    alt=""
+                    title=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/images/home/home-ice-cream-active.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p>دسته بندی ۱</p>
+                </a>
+
+                <a
+                  data-target="#category-tab-2"
+                  href="#"
+                  class="home-tabs-category-item"
+                >
+                  <img
+                    class="normal"
+                    src="./public/images/home/home-ice-cream-normal.svg"
+                    alt=""
+                    title=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/images/home/home-ice-cream-active.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p>دسته بندی ۲</p>
+                </a>
+
+                <a
+                  data-target="#category-tab-3"
+                  href="#"
+                  class="home-tabs-category-item"
+                >
+                  <img
+                    class="normal"
+                    src="./public/images/home/home-ice-cream-normal.svg"
+                    alt=""
+                    title=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/images/home/home-ice-cream-active.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p>دسته بندی ۳</p>
+                </a>
+                <a
+                  data-target="#category-tab-4"
+                  href="#"
+                  class="home-tabs-category-item"
+                >
+                  <img
+                    class="normal"
+                    src="./public/images/home/home-ice-cream-normal.svg"
+                    alt=""
+                    title=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/images/home/home-ice-cream-active.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p>دسته بندی ۴</p>
+                </a>
+                <a
+                  data-target="#category-tab-5"
+                  href="#"
+                  class="home-tabs-category-item"
+                >
+                  <img
+                    class="normal"
+                    src="./public/images/home/home-ice-cream-normal.svg"
+                    alt=""
+                    title=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/images/home/home-ice-cream-active.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p>دسته بندی ۵</p>
+                </a>
+              </div>
+
+              <div id="category-tab-1" class="home-tabs-content active">
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-1.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-2.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-3.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-4.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-5.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-6.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-7.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-8.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-9.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="category-tab-2" class="home-tabs-content">
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-2.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-1.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-3.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-4.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-5.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-6.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-7.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-8.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-9.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="category-tab-3" class="home-tabs-content">
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-1.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-2.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-3.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-4.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-5.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-6.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-7.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-8.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-9.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="category-tab-4" class="home-tabs-content">
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-1.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-2.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-3.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-4.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-5.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-6.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-7.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-8.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-9.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="category-tab-5" class="home-tabs-content">
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-1.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-2.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-3.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-4.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-5.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-6.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-7.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-8.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <img
+                        src="./public/images/home/basket.svg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="home-tabs-content-item">
+                  <div class="home-tabs-content-item-image">
+                    <img src="./public/images/home/icecream-9.jpg" alt="" />
+                  </div>
+                  <div class="home-tabs-content-item-content">
+                    <div class="home-tabs-content-item-price">
+                      <b> بستنی وانیلی </b>
+                      <p><b>245,000</b> هزارتومان</p>
+                    </div>
+                    <div class="home-tabs-content-item-badge">
+                      <div class="home-tabs-content-item-count">
+                        <span class="home-tabs-content-item-count-minus">
+                          -
+                        </span>
+                        <span class="home-tabs-content-item-count-number">
+                          1
+                        </span>
+                        <span class="home-tabs-content-item-count-plus">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="shared-sidebar">
+                <div class="shared-sidebar-head">
+                  <p class="shared-sidebar-head-basket">
+                    سبد خرید
+                    <span class="shared-sidebar-head-count"> 3 </span>
+                  </p>
+                  <img src="./public/images/global/trash.svg" alt="" title="" />
+                </div>
+                <div class="shared-sidebar-item">
+                  <div class="shared-sidebar-item-price">
+                    <b> بستنی وانیلی </b>
+                    <p><b>245,000</b> هزارتومان</p>
+                  </div>
+                  <div class="shared-sidebar-item-badge">
+                    <div class="shared-sidebar-item-count">
+                      <span class="shared-sidebar-item-count-minus"> - </span>
+                      <span class="shared-sidebar-item-count-number"> 1 </span>
+                      <span class="shared-sidebar-item-count-plus"> + </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="shared-sidebar-item">
+                  <div class="shared-sidebar-item-price">
+                    <b> بستنی وانیلی </b>
+                    <p><b>245,000</b> هزارتومان</p>
+                  </div>
+                  <div class="shared-sidebar-item-badge">
+                    <div class="shared-sidebar-item-count">
+                      <span class="shared-sidebar-item-count-minus"> - </span>
+                      <span class="shared-sidebar-item-count-number"> 1 </span>
+                      <span class="shared-sidebar-item-count-plus"> + </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="shared-sidebar-item">
+                  <div class="shared-sidebar-item-price">
+                    <b> بستنی وانیلی </b>
+                    <p><b>245,000</b> هزارتومان</p>
+                  </div>
+                  <div class="shared-sidebar-item-badge">
+                    <div class="shared-sidebar-item-count">
+                      <span class="shared-sidebar-item-count-minus"> - </span>
+                      <span class="shared-sidebar-item-count-number"> 1 </span>
+                      <span class="shared-sidebar-item-count-plus"> + </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-md home-contact">
+        <div class="container">
+          <div class="shared-title">
+            <div class="shared-title-image">
+              <img
+                src="./public/images/global/shape-title.svg"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="shared-title-header">
+              <h2 class="shared-title-heading">با ما در ارتباط باشید</h2>
+              <p class="shared-title-subheading">شروع تحولی محسوس</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="home-contact-link-container">
+                <a
+                  class="home-contact-btn active"
+                  data-target="home-tab-contact"
+                >
+                  <img
+                    src="./public/images/home/building.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p class="home-contact-btn-title">در خواست همکاری</p>
+                </a>
+                <a class="home-contact-btn" data-target="home-tab-collab">
+                  <img
+                    src="./public/images/home/three-building.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p class="home-contact-btn-title">در خواست همکاری</p>
+                </a>
+                <a class="home-contact-btn" data-target="home-tab-wholesale">
+                  <img
+                    src="./public/images/home/monitoring.svg"
+                    alt=""
+                    title=""
+                  />
+                  <p class="home-contact-btn-title">در خواست همکاری</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div id="home-tab-contact" class="home-contact-tab active">
+                <form action="" class="home-contact-form">
+                  <div>
+                    <label for="name"> نام * </label>
+                    <input type="text" />
+                  </div>
+                  <div>
+                    <label for="surname"> نام خانوادگی * </label>
+                    <input type="text" />
+                  </div>
+                  <div>
+                    <label for="surname"> شماره همراه * </label>
+                    <input type="number" />
+                  </div>
+                  <div>
+                    <label for="email"> ایمیل * </label>
+                    <input type="email" />
+                  </div>
+                  <div>
+                    <label for="city"> شهر سکونت * </label>
+                    <input type="text" />
+                  </div>
+                  <div>
+                    <label for="address"> آدرس * </label>
+                    <input type="text" />
+                  </div>
+                  <div>
+                    <label for="diploma"> مدرک تحصیلی * </label>
+                    <input type="text" />
+                  </div>
+                  <div class="home-contact-form-file">
+                    <label>رزومه *</label>
+                    <label
+                      for="file-input"
+                      class="home-contact-form-file-input"
+                    >
+                      <span><img src="./public/images/home/" alt="" /></span>
+                      <input type="file" id="file-input" />
+                    </label>
+                  </div>
+                  <img
+                    src="./public/images/home/shape-form.svg"
+                    alt=""
+                    title=""
+                    class="home-contact-form-shape"
+                  />
+                  <a href="#" class="btn btn-primary form-btn"> ارسال </a>
+                </form>
+              </div>
+              <div id="home-tab-collab" class="home-contact-tab">collab</div>
+              <div id="home-tab-wholesale" class="home-contact-tab">
+                wholesale
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="bg-seperator"></div>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-details">
+          <img
+            class="footer-img"
+            src="./public/images/global/fadak-logo.svg"
+            alt=""
+            title=""
+          />
+          <p class="footer-desc">
+            این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+            دستاوردهای اصلی، و جوابگوی این صورت می توان امید داشت که تمام و
+            دشواری موجود .
+          </p>
+          <div class="footer-call-info">
+            <div class="footer-call-info-box">
+              <i class="fa fa-phone"></i>
+              <div>
+                <a href="#">
+                  شماره تماس
+                  <br />
+                  00905419094990
+                </a>
+              </div>
+            </div>
+            <div class="footer-call-info-box">
+              <i class="fa fa-phone"></i>
+              <div>
+                <a href="#">
+                  شماره تماس
+                  <br />
+                  00905419094990
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-icons">
+            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-title">دسترسی سریع</p>
+          <ul>
+            <li>
+              <a href=""> خانه </a>
+            </li>
+            <li>
+              <a href=""> درباره ما </a>
+            </li>
+            <li>
+              <a href=""> همکاری با ما </a>
+            </li>
+            <li>
+              <a href=""> بلاگ </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-title">محصولات پرطرفدار</p>
+          <ul>
+            <li>
+              <a href=""> بستنی وانیلی </a>
+            </li>
+            <li>
+              <a href=""> بستنی رعفرانی </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز ویژه فدک </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ مغز دار </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-title">محصولات پرطرفدار</p>
+          <ul>
+            <li>
+              <a href=""> بستنی وانیلی </a>
+            </li>
+            <li>
+              <a href=""> بستنی رعفرانی </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز ویژه فدک </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ مغز دار </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        class="footer-abs-image"
+        src="./public/images/global/shape-footer.svg"
+        alt=""
+        title=""
+      />
+
+      <p class="footer-copy">طراحی و پیاده سازی توسط شرکت <a href="#">همکاره</a> می باشد.</p>
+    </footer>
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      var swiper = new Swiper(".home-hero-swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const HomecontactLinks = document.querySelectorAll(".home-contact-btn");
+      const HomeTabContents = document.querySelectorAll(".home-contact-tab");
+
+      HomecontactLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault(); // Prevent default anchor link behavior
+          // Remove active class from all tabs and tab contents
+          HomecontactLinks.forEach((tab) => tab.classList.remove("active"));
+          HomeTabContents.forEach((content) =>
+            content.classList.remove("active")
+          );
+
+          // Add active class to the clicked tab and its content
+          link.classList.add("active");
+          document.querySelector(link.dataset.target).classList.add("active");
+        });
+      });
+
+      const tabLinks = document.querySelectorAll(".home-tabs-category-item");
+      const tabContents = document.querySelectorAll(".home-tabs-content");
+
+      tabLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault(); // Prevent default anchor link behavior
+
+          // Remove active class from all tabs and tab contents
+          tabLinks.forEach((tab) => tab.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          // Add active class to the clicked tab and its content
+          link.classList.add("active");
+          document.querySelector(link.dataset.target).classList.add("active");
+        });
+      });
+    </script>
+  </body>
 </html>

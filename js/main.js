@@ -13,40 +13,35 @@ fadak.Global.init = function () {
   }
 };
 
-fadak.Sliders = fadak.Sliders || {};
-fadak.Sliders.init = function () {
+
+
+fadak.homeTabs = fadak.homeTabs || {};
+fadak.homeTabs.init = function () {
   try {
-    
-    const home_hero_slider = new Swiper(".home_hero_slider", {
-      spaceBetween: 30,
-      // centeredSlides: true,
-      loop: true,
-      effect: "fade",
-      crossFade: false,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".home_hero_slider .swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)} `;
-        },
-      },
+
+    const tabLinks = document.querySelectorAll(".home-tabs-category-item");
+    const tabContents = document.querySelectorAll(".home-tabs-content");
+
+    tabLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default anchor link behavior
+
+        // Remove active class from all tabs and tab contents
+        tabLinks.forEach((tab) => tab.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        // Add active class to the clicked tab and its content
+        link.classList.add("active");
+        document.querySelector(link.dataset.target).classList.add("active");
+      });
     });
 
+    
   } catch (error) {
-    console.log("Error on fadak.Sliders.init() : " + error);
+    console.log("Error on fadak.homeTabs.init() : " + error)
   }
-};
+}
+
 
 // fadak.Global = fadak.Global || {};
 // fadak.Global.init = function () {
@@ -58,8 +53,5 @@ fadak.Sliders.init = function () {
 // }
 
 window.addEventListener("DOMContentLoaded", function () {
-  fadak.Global.init();
-  fadak.ResizeHeaderMenu.init();
-  fadak.Sliders.init();
-  fadak.Accordion.init();
+  fadak.homeTabs.init()
 });

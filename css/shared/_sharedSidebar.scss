@@ -1,0 +1,77 @@
+.shared-sidebar {
+  background-color: #f3f3f3;
+  width: 100%;
+  border-radius: 1000px 1000px 10px 10px;
+  background-image: url(/public/images/global/sidebar-star.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 12rem 1rem 1rem;
+
+  &-head {
+    display: flex;
+    padding: 0.5rem;
+    border-bottom: 1px solid $light_green-color;
+    justify-content: space-between;
+
+    &-count {
+      background-color: $primary_color;
+      color: $white_color;
+      padding: 0.3rem 1rem;
+      border-radius: 10px;
+    }
+
+    &-basket {
+      display: flex;
+      gap: 0.7rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem 0.5rem;
+    align-items: end;
+    font-size: 0.9em;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $light_green-color;
+    }
+
+    &-price {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      color: #0067a5;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem 1rem;
+      align-items: end;
+    }
+
+    &-count {
+      border: 1px solid blue;
+      padding: 0.2rem 1rem;
+      border-radius: 10px;
+
+      &-plus {
+        color: $primary_color;
+      }
+
+      &-minus {
+        color: #e0372c;
+      }
+
+      &-number {
+        color: $primary_color;
+      }
+    }
+  }
+
+  @media(max-width:992px){
+    margin: 3rem 0;
+  }
+}

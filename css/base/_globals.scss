@@ -1,65 +1,40 @@
 @import "./variables";
 
+//font setting start
+
+@font-face {
+  font-family: "yekan";
+  src: url("./base/fonts/iranyekan-regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./base/fonts/iranyekan-medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./base/fonts/iranyekan-bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./base/fonts/iranyekan-black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+//font setting end
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-//fonts settings start
-@font-face {
-  font-family: "sans";
-  src: url("../fonts/IRANSansWebFaNum-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "sans";
-  src: url("../fonts/IRANSansWebFaNum-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "sans";
-  src: url("../fonts/IRANSansWebFaNum-UltraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "sans";
-  src: url("../fonts/IRANSansWebFaNum.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "sans";
-  src: url("../fonts/IRANSansWebFaNum-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "sans";
-  src: url("../fonts/IRANSansWebFaNum-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ArialBlack";
-  src: url("../fonts/Arial_Black.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-//font setting end
-
-
-//general setting start
 html,
 body {
   padding: 0;
@@ -71,28 +46,26 @@ body {
 }
 
 body {
-  font-family: "sans";
+  font-family: "yekan";
   font-size: 14px;
   line-height: 1.8;
-}
-
-main {
-  margin-top: 3rem;
 }
 
 a {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: #000;
 }
 
 P {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 input,
 textarea,
 select {
-  font-family: "sans";
+  font-family: "yekan";
 }
 
 .border-default {
@@ -139,7 +112,10 @@ input[type="number"] {
 }
 
 .bg-seperator {
-  background-color: $bg_seperator;
+  height: 35px;
+  width: 100%;
+  background-color: $light_blue_color;
+  background-image: url("../../public/images/global/bg-seperator.svg");
 }
 
 .text-white {
@@ -385,17 +361,17 @@ img {
   max-width: 100%;
 }
 
-font{
-  &-thin{
+font {
+  &-thin {
     font-weight: 300 !important;
   }
-  &-regular{
+  &-regular {
     font-weight: 400 !important;
   }
-  &-semi-bold{
+  &-semi-bold {
     font-weight: 500 !important;
   }
-  &-bold{
+  &-bold {
     font-weight: 700 !important;
   }
 }
@@ -1254,421 +1230,211 @@ a {
     justify-content: center;
   }
 
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    text-align: center;
-  }
-}
+  @media only screen and (max-width: 768px) {
+    .d-md-none {
+      display: none !important;
+    }
 
-@media only screen and (max-width: 768px) {
-  .d-md-none {
-    display: none !important;
-  }
+    .d-md-block {
+      display: block !important;
+    }
 
-  .d-md-block {
-    display: block !important;
-  }
+    .text-md-center {
+      text-align: center !important;
+    }
 
-  .text-md-center {
-    text-align: center !important;
-  }
-
-  .mx-md-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .d-sm-none {
-    display: none !important;
+    .mx-md-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
   }
 
-  .d-sm-block {
-    display: block !important;
+  @media only screen and (max-width: 576px) {
+    .d-sm-none {
+      display: none !important;
+    }
+
+    .d-sm-block {
+      display: block !important;
+    }
   }
-}
 
-.btn-cta {
-  color: $white_color;
-  background: rgba(255, 166, 0, 0.78);
-  padding: 0.7rem 1rem;
-  border-radius: 0.3rem;
-  transition: background 0.3s;
-  display: block;
-
-  &:hover {
-    background: rgba(255, 185, 55, 0.78);
+  .text-justify {
+    text-align: justify !important;
   }
-}
 
-.btn-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-}
-
-.btn-primary {
-  text-decoration: none;
-  background-color: $primary_color;
-  color: $white_color;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.3rem;
-  display: inline-block;
-}
-
-.btn-primary:hover {
-  background-color: $secondary_color;
-  transition: 0.4s;
-}
-
-.btn-secondary {
-  text-decoration: none;
-  background-color: $cta_color;
-  color: $white_color;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.3rem;
-  display: inline-block;
-}
-
-.btn-secondary:hover {
-  background-color: $cta_hover_color;
-  transition: 0.4s;
-}
-
-.btn-secondary-two {
-  text-decoration: none;
-  background-color: transparent;
-  color: $black_color;
-  border: 1px solid $primary_color;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.3rem;
-  display: inline-block;
-}
-
-.btn-secondary-two:hover {
-  background-color: $primary_color;
-  transition: 0.4s;
-  color: $white_color;
-  cursor: pointer;
-}
-
-main {
-  position: relative;
-  z-index: 0;
-}
-
-.overlay {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.25s;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: rgba(255, 255, 255, 0.21);
-  // border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  top: 0;
-  right: 0;
-
-  &.active {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.mobileOverlay {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.25s;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: rgba(255, 255, 255, 0.21);
-  // border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  top: 0;
-  right: 0;
-
-  &.active {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.shop_overlay {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.25s;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: rgba(255, 255, 255, 0.21);
-  // border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  top: 0;
-  right: 0;
-
-  &.active {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.phone {
-  display: inline-block !important;
-  direction: ltr !important;
-}
-
-.text-justify {
-  text-align: justify !important;
-}
-
-.color-primary {
-  color: $primary_color !important;
-}
-
-input,
-select,
-textarea,
-button {
-  resize: none;
-  border: 0;
-  outline: 0;
-  font-family: "sans";
-}
-
-button {
-  cursor: pointer;
-}
-
-.custom-input {
-  label {
-    font-size: 0.95em;
-    color: $text_color;
-    font-weight: 300;
-    margin-bottom: 0.4rem;
-    cursor: pointer;
+  .color-primary {
+    color: $primary_color !important;
   }
 
   input,
   select,
-  textarea {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    align-items: center;
-    border: 1px solid $border_color;
-    border-radius: 0.25rem;
-    box-shadow: none;
-    background-color: $white_color;
-    display: inline-flex;
-    font-weight: 200;
-    font-size: 14px;
-    height: 2.5rem;
-    justify-content: flex-start;
-    line-height: 1.5;
-    outline: 0;
+  textarea,
+  button {
     resize: none;
-    color: $text_color;
-    padding-bottom: calc(0.5em - 1px);
-    padding-left: calc(0.75em - 1px);
-    padding-right: calc(0.75em - 1px);
-    padding-top: calc(0.5em - 1px);
-    position: relative;
-    vertical-align: top;
-    transition: 0.4s;
+    border: 0;
+    outline: 0;
+    font-family: "yekan";
+  }
 
-    &:focus {
-      // box-shadow: $light_box_shadow;
-      border-color: #aaa;
+  button {
+    cursor: pointer;
+  }
+
+  .custom-input {
+    label {
+      font-size: 0.95em;
+      color: $text_color;
+      font-weight: 300;
+      margin-bottom: 0.4rem;
+      cursor: pointer;
     }
-  }
 
-  textarea {
-    height: auto;
-  }
-
-  select {
-    padding-right: 0.9rem;
-  }
-
-  &.has-icon {
-    position: relative;
-
-    input {
-      padding-right: 2.75rem;
+    input,
+    select,
+    textarea {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      align-items: center;
+      border: 1px solid $border_color;
+      border-radius: 0.25rem;
+      box-shadow: none;
+      background-color: $white_color;
+      display: inline-flex;
+      font-weight: 200;
+      font-size: 14px;
+      height: 2.5rem;
+      justify-content: flex-start;
+      line-height: 1.5;
+      outline: 0;
+      resize: none;
+      color: $text_color;
+      padding-bottom: calc(0.5em - 1px);
+      padding-left: calc(0.75em - 1px);
+      padding-right: calc(0.75em - 1px);
+      padding-top: calc(0.5em - 1px);
       position: relative;
+      vertical-align: top;
+      transition: 0.4s;
 
       &:focus {
-        & + .input-icon {
-          color: $primary_color;
-        }
+        // box-shadow: $light_box_shadow;
+        border-color: #aaa;
       }
     }
 
-    .input-icon {
-      position: absolute;
-      right: 1px;
-      bottom: 1px;
-      color: $text_color;
-      width: 2.5rem;
-      height: 2.5rem;
-      padding-bottom: 0.125rem;
-      background-color: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.1em;
-      transition: 0.4s;
+    textarea {
+      height: auto;
     }
-  }
-}
 
-.custom-button {
-  display: inline-flex;
-  align-items: center;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  text-align: center;
-  white-space: nowrap;
-  transition: 0.25s;
-  padding: 0.4rem 1.2rem;
-  height: 2.5rem;
-  line-height: 1.1;
-  font-size: 0.9rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  outline: 3px solid transparent;
-  font-weight: 200;
+    select {
+      padding-right: 0.9rem;
+    }
 
-  &.primary {
-    background-color: $primary_color;
-    color: $white_color;
-    // box-shadow: $primary_box_shadow;
+    &.has-icon {
+      position: relative;
 
-    &:hover {
-      outline-color: rgba($color: $primary_color, $alpha: 0.4);
+      input {
+        padding-right: 2.75rem;
+        position: relative;
+
+        &:focus {
+          & + .input-icon {
+            color: $primary_color;
+          }
+        }
+      }
+
+      .input-icon {
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
+        color: $text_color;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding-bottom: 0.125rem;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+        transition: 0.4s;
+      }
     }
   }
 
-  &.blue {
-    background-color: $blue_color;
-    color: $white_color;
-    // box-shadow: $blue_box_shadow;
+  .tab {
+    &_content {
+      display: none;
 
-    &:hover {
-      outline-color: rgba($color: $blue_color, $alpha: 0.4);
+      &.active {
+        display: block;
+      }
     }
   }
 
-  &.orange {
-    background-color: $primary_color;
-    color: $white_color;
-    // box-shadow: $orange_box_shadow;
-
-    &:hover {
-      outline-color: rgba($color: $primary_color, $alpha: 0.4);
-    }
-  }
-
-  &.light {
-    background-color: rgba($color: $black_color, $alpha: 0.1);
-    color: $brown_color;
-    // box-shadow: $light_box_shadow;
-
-    &:hover {
-      outline-color: rgba($color: $black_color, $alpha: 0.3);
-    }
-  }
-
-  &.red {
-    background-color: $red_color;
-    color: $white_color;
-    // box-shadow: $red_box_shadow;
-
-    &:hover {
-      outline-color: rgba($color: $red_color, $alpha: 0.4);
-    }
-  }
-
-  &.green {
-    background-color: $green_color;
-    color: $white_color;
-    // box-shadow: $red_box_shadow;
-
-    &:hover {
-      outline-color: rgba($color: $green_color, $alpha: 0.4);
-    }
-  }
-
-  &.no-shadow {
-    box-shadow: unset;
-  }
-
-  &:focus {
-    box-shadow: unset;
-  }
-}
-
-.tab {
-  &_content {
-    display: none;
-
-    &.active {
+  .form {
+    &-control {
       display: block;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      color: $text_color;
+      outline: 0;
+      border: 1px solid rgba($color: $black_color, $alpha: 0.15);
+      border-radius: 0.5rem;
+      background-color: $white_color;
+      font-size: 1.3em;
+
+      &.primary-mode {
+        border-color: $primary_color;
+      }
+
+      &.secondary-mode {
+        border-color: $secondary_color;
+      }
+    }
+
+    &-label {
+      display: block;
+      font-weight: 300;
+      margin-bottom: 0.3rem;
+      color: rgba($color: $black_color, $alpha: 0.7);
+    }
+
+    &-group {
+      margin-bottom: 1.25rem;
     }
   }
 }
 
-.form {
-  &-control {
-    display: block;
-    width: 100%;
+.btn {
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    background-color: #007d6e;
+    color: #fff;
     padding: 0.5rem 1rem;
-    color: $text_color;
-    outline: 0;
-    border: 1px solid rgba($color: $black_color, $alpha: 0.15);
-    border-radius: 0.5rem;
-    background-color: $white_color;
-    font-size: 1.3em;
-
-    &.primary-mode {
-      border-color: $primary_color;
-    }
-
-    &.secondary-mode {
-      border-color: $secondary_color;
-    }
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-image: url("../../public/images/global/shape-primary-button.svg");
+    background-repeat: no-repeat;
   }
 
-  &-label {
-    display: block;
-    font-weight: 300;
-    margin-bottom: 0.3rem;
-    color: rgba($color: $black_color, $alpha: 0.7);
-  }
+  &-secondary{
+    border: 1px solid $dark_green_color;
+    color: $dark_green_color;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    background-image: url("../../public/images/global/shape-secondary-button.svg");
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 
-  &-group {
-    margin-bottom: 1.25rem;
   }
 }
-
-
-//utilitty classes end
