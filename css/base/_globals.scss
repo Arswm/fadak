@@ -211,6 +211,10 @@ input[type="number"] {
 .wrapper {
   margin-bottom: 2rem;
 
+  &-sm{
+    margin-bottom: 4rem;
+  }
+
   &-md {
     margin-bottom: 7rem;
   }
@@ -284,6 +288,23 @@ input[type="number"] {
   }
 }
 
+.order{
+  &-1{
+    order: 1 !important;
+  }
+  &-2{
+    order: 2 !important;
+  }
+  &-3{
+    order: 3 !important;
+  }
+  &-4{
+    order: 4 !important;
+  }
+  &-5{
+    order: 5 !important;
+  }
+}
 .d {
   &-flex {
     display: flex !important;
@@ -398,6 +419,9 @@ a {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  @media(max-width:992px){
+    gap: 2rem;
   }
 
   @media only screen and (max-width: 768px) {
@@ -896,6 +920,12 @@ a {
   }
 }
 
+.gap{
+  &-0{
+    gap: 0 !important;
+  }
+}
+
 .mx {
   &-auto {
     margin-left: auto !important;
@@ -1256,6 +1286,44 @@ a {
 
     .d-sm-block {
       display: block !important;
+    }
+  }
+  @media(max-width :768px){
+    .order-md{
+      &-1{
+        order: 1 !important;
+      }
+      &-2{
+        order: 2 !important;
+      }
+      &-3{
+        order: 3 !important;
+      }
+      &-4{
+        order: 4 !important;
+      }
+      &-5{
+        order: 5 !important;
+      }
+    }
+  }
+  @media(max-width :576px){
+    .order-sm{
+      &-1{
+        order: 1 !important;
+      }
+      &-2{
+        order: 2 !important;
+      }
+      &-3{
+        order: 3 !important;
+      }
+      &-4{
+        order: 4 !important;
+      }
+      &-5{
+        order: 5 !important;
+      }
     }
   }
 

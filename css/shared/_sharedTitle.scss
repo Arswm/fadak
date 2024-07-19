@@ -29,7 +29,15 @@
     }
 
     @media(max-width:992px){
-        justify-content: center;
+        justify-content: start;
         text-align: center;
+       
+        &-heading{
+            font-size: 1.3em;
+        }
+
+        &-subheading{
+            font-size: 0.9em;
+        }
     }
 }

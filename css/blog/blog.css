@@ -1,0 +1,19 @@
+.blog-intro {
+  margin-top: 5rem;
+}
+.blog-intro-image {
+  border: none;
+  border-radius: 1000px 1000px 40px 40px;
+  overflow: hidden;
+}
+.blog-intro-image img {
+  width: 100%;
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-intro-desc {
+  color: #424242;
+}/*# sourceMappingURL=blog.css.map */

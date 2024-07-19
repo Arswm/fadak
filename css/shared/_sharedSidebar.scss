@@ -72,6 +72,11 @@
   }
 
   @media(max-width:992px){
-    margin: 3rem 0;
+    margin: 1rem 0;
+    padding: 12rem 4rem 2rem;
+  }
+
+  @media(max-width:576px){
+    padding: 12rem 1rem 2rem;
   }
 }

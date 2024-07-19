@@ -1,0 +1,139 @@
+@import "../base/variables";
+
+.mobile-header {
+  padding: 1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > * {
+    width: 33%;
+  }
+
+  &-menu-opener {
+    color: $light_blue_color;
+    i {
+      font-size: 1.2em;
+    }
+  }
+
+  &-logo {
+    width: 45px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-icons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    * {
+      font-size: 1.2em;
+      color: $light_blue_color;
+    }
+  }
+
+  @media(min-width:992px){
+    display: none;
+  }
+}
+
+.mobile-overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  top: 0;
+  right: 0;
+  overflow: hidden;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+.mobile-menu {
+  &.active {
+    right: 0;
+    transition: 0.4s;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.06);
+  }
+
+  width: 300px;
+  background: #fff;
+  position: absolute;
+  z-index: 20;
+  right: -100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  justify-content: center;
+  position: absolute;
+
+  &-image {
+    img {
+      width: 80px;
+    }
+    border-bottom: solid 1px $primary_color;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &-nav {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px $dark_green_color;
+
+    &-links {
+      &-item {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        img {
+          width: 24px;
+        }
+
+        a {
+          color: $primary_color;
+        }
+        &.active {
+          a {
+            color: $dark_green_color;
+          }
+        }
+      }
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    a {
+      min-width: 45%;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 22px;
+  }
+}

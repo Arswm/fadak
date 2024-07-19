@@ -29,6 +29,7 @@
   justify-content: start;
   gap: 2.5rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 .home-tabs-category-item {
   display: flex;
@@ -267,6 +268,12 @@
 }
 @media (max-width: 992px) {
   .shared-sidebar {
-    margin: 3rem 0;
+    margin: 1rem 0;
+    padding: 12rem 4rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .shared-sidebar {
+    padding: 12rem 1rem 2rem;
   }
 }/*# sourceMappingURL=home.css.map */

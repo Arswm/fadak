@@ -15,6 +15,7 @@ footer {
     margin: 3rem auto 0;
     position: relative;
     overflow: hidden;
+    padding: 0 3rem;
   }
 
   &-details {
@@ -39,7 +40,6 @@ footer {
     gap: 1rem;
     justify-content: center;
     margin-bottom: 1.5rem;
-    flex-wrap: wrap;
     padding: 0 1rem;
     &-box {
       flex-grow: 1;
@@ -104,8 +104,12 @@ footer {
   }
 
   @media (max-width: 768px) {
+
+
+
     &-grid {
       grid-template-columns: repeat(2, 1fr);
+      padding: 0 1rem;
     }
     &-img{
       margin: 1rem auto;
@@ -121,6 +125,10 @@ footer {
     }
     &-links{
       text-align: center;
+    }
+    &-call-info{
+      flex-wrap: wrap;
+
     }
   }
 
