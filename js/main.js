@@ -42,7 +42,6 @@ fadak.homeTabs.init = function () {
   }
 }
 
-
 // fadak.Global = fadak.Global || {};
 // fadak.Global.init = function () {
 //   try {

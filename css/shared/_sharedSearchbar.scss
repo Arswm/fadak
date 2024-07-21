@@ -1,0 +1,33 @@
+@import "../base/variables";
+
+.shared {
+  &-search-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  &-search {
+    border: none;
+    background: #f3f3f3;
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: 1px solid $primary_color;
+    }
+  }
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  left: 1rem;
+  color: $primary_color;
+  font-size: 1.2rem;
+}
+
+

@@ -1,0 +1,19 @@
+.fadak-blog-intro {
+  margin-top: 5rem;
+}
+.fadak-blog-intro-image {
+  border: none;
+  border-radius: 1000px 1000px 40px 40px;
+  overflow: hidden;
+}
+.fadak-blog-intro-image img {
+  width: 100%;
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fadak-blog-intro-desc {
+  color: #424242;
+}/*# sourceMappingURL=fadak-blog.css.map */

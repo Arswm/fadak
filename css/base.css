@@ -43510,6 +43510,11 @@ a {
   gap: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .md-hidden {
+    display: none !important;
+  }
+}
 /**
  * Swiper 11.1.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -44423,7 +44428,14 @@ footer {
   color: #0067a5;
 }
 .mobile-header-menu-opener i {
-  font-size: 1.2em;
+  border: 1px solid #1c39bb;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-header-logo {
   width: 45px;
@@ -44441,6 +44453,16 @@ footer {
 .mobile-header-icons * {
   font-size: 1.2em;
   color: #0067a5;
+}
+.mobile-header-icons i.fa-user, .mobile-header-icons i.fa-cart-shopping {
+  border: 1px solid #1c39bb;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 992px) {
   .mobile-header {
@@ -44643,6 +44665,17 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 700;
+  position: relative;
+}
+.shared-accordion-item-title::before {
+  content: "";
+  position: absolute;
+  right: -1rem;
+  height: 80%;
+  width: 3px;
+  background-color: #1c39bb;
+  border-radius: 20px;
 }
 .shared-accordion-item-title i.fa-plus {
   display: block;
@@ -44670,4 +44703,30 @@ footer {
   visibility: visible;
   max-height: 800px;
   transition: 0.3s;
+}
+
+.shared-search-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+.shared-search {
+  border: none;
+  background: #f3f3f3;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.shared-search:focus {
+  outline: 1px solid #1c39bb;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  left: 1rem;
+  color: #1c39bb;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=base.css.map */

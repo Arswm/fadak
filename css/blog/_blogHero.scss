@@ -1,0 +1,126 @@
+.blog-hero {
+  margin-top: 3rem;
+    .shared-blog-cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    &-sidebar {
+      &-title {
+        color: $primary_color;
+        font-weight: 700;
+        position: relative;
+        padding-right: 1rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+  
+        &::before {
+          content: "";
+          height: 80%;
+          background-color: $primary_color;
+          width: 4px;
+          border-radius: 10px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+  
+      .fa-magnifying-glass {
+        position: absolute;
+        left: 1rem;
+        color: $primary_color;
+        font-size: 1.2rem;
+      }
+  
+      &-seperator {
+        height: 2px;
+        width: 100%;
+        background: rgb(28, 57, 187);
+        background: radial-gradient(
+          circle,
+          rgba(28, 57, 187, 1) 0%,
+          rgba(28, 57, 187, 1) 30%,
+          rgba(28, 57, 187, 1) 70%,
+          rgba(245, 245, 245, 0) 100%
+        );
+        margin: 1rem 0 2rem;
+      }
+  
+      &-container {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+  
+      &-category {
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f5f9fb;
+        border-radius: 30px;
+        border: 1px solid transparent;
+          
+        &:hover {
+          cursor: pointer;
+          border-color: $primary_color;
+          transition: 0.3s;
+        }
+      }
+  
+      &-blog-item {
+        display: flex;
+        gap: 1rem;
+        background: #f5f9fb;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        align-items: center;
+        margin-bottom: 1rem;
+  
+        &-img {
+          width: 84px;
+          img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+          }
+        }
+  
+        &-title {
+          font-weight: 500;
+          font-size: 1.1em;
+        }
+  
+        &-content {
+          width: calc(100% - 84px);
+        }
+  
+        &-desc {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1.5rem; /* Set line height */
+          max-height: 3rem; /* Set the height to accommodate two lines */
+        }
+      }
+    }
+  
+    @media(max-width:768px){
+      .shared-blog-cards-grid{
+          grid-template-columns: 1fr 1fr;
+      }
+  
+      &-sidebar{
+          &-search-label{
+              display: none;
+          }
+      }
+    }
+  }

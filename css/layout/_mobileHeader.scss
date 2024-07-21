@@ -13,7 +13,15 @@
   &-menu-opener {
     color: $light_blue_color;
     i {
-      font-size: 1.2em;
+
+      border: 1px solid $primary_color;
+      padding: 0.5rem;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -34,9 +42,19 @@
       font-size: 1.2em;
       color: $light_blue_color;
     }
+    i.fa-user , i.fa-cart-shopping {
+      border: 1px solid $primary_color;
+      padding: 0.5rem;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  @media(min-width:992px){
+  @media (min-width: 992px) {
     display: none;
   }
 }

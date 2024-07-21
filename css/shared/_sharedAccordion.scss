@@ -16,6 +16,7 @@
     overflow: hidden; 
     cursor: pointer;
     
+    
     i{
       color: $light_blue_color;
     }
@@ -24,6 +25,18 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      font-weight: 700;
+      position: relative;
+      
+      &::before{
+        content: '';
+        position: absolute;
+        right: -1rem;
+        height: 80%;
+        width: 3px;
+        background-color: $primary_color;
+        border-radius: 20px;
+      }
 
       i.fa-plus{
         display: block;

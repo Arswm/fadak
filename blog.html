@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Fadak</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/blog/blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="./public/images/global/fadak-logo.svg" alt="" title="" />
+      </div>
+
+      <nav class="header-nav">
+        <ul class="header-nav-links">
+          <li>
+            <a class="header-nav-links-item" href="#"> خانه </a>
+          </li>
+          <li>
+            <a class="header-nav-links-item" href="#"> خدمات </a>
+          </li>
+          <li>
+            <a class="header-nav-links-item active" href="#">
+              <img
+                src="./public/images/global/shape-active-nav.svg"
+                alt=""
+                title=""
+              />
+              مقالات
+            </a>
+          </li>
+          <li>
+            <a class="header-nav-links-item" href="#"> درباره </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-primary" href="#">
+           <i class="far fa-user"></i>
+          ورود / ثبت نام
+        </a>
+        <a class="btn btn-secondary" href="#">
+          <i class="fa fa-phone"></i>
+          ورود / ثبت نام
+        </a>
+      </div>
+    </header>
+
+    <div class="mobile-overlay">
+      <div class="mobile-menu">
+        <div class="mobile-menu-image">
+          <img src="./public/images/global/fadak-logo.svg" alt="" />
+        </div>
+        <div class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-links">
+            <li class="mobile-menu-nav-links-item">
+              <a href="#">خانه</a>
+            </li>
+            <li class="mobile-menu-nav-links-item">
+              <a href="#">خدمات</a>
+            </li>
+            <li class="mobile-menu-nav-links-item active">
+              <img
+                src="./public/images/global/shape-active-nav.svg"
+                alt=""
+                title=""
+              />
+              <a href="#">مقالات</a>
+            </li>
+            <li class="mobile-menu-nav-links-item">
+              <a href="#">درباره</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-buttons">
+          <a href="#" class="btn btn-primary">ثبت نام</a>
+          <a href="#" class="btn btn-secondary">ورود</a>
+        </div>
+        <label for="searchbar" class="shared-search-label">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="shared-search"
+            name="searchbar"
+            placeholder="جستجو..."
+          />
+        </label>
+
+        <div class="mobile-header-background">
+          <img
+            src="./public/images/global/shape-mobile-header.svg"
+            alt=""
+            title=""
+          />
+        </div>
+
+        <p class="mobile-menu-close">X</p>
+      </div>
+    </div>
+
+    <div class="mobile-header">
+      <div class="mobile-header-menu-opener" id="mobileMenuOpener">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="mobile-header-logo">
+        <img src="./public/images/global/fadak-logo.svg" alt="" title="" />
+      </div>
+      <div class="mobile-header-icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+
+    <main>
+      <section class="blog-hero wrapper-md">
+        <div class="container">
+          <div class="shared-title">
+            <div class="shared-title-image">
+              <img
+                src="./public/images/global/shape-title.svg"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="shared-title-header">
+              <h2 class="shared-title-heading">مقالات فدک</h2>
+              <p class="shared-title-subheading">جدیدترین و تازه ترین اخبار</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-9">
+              <div class="shared-blog-cards-grid">
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-1.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-2.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-3.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-4.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-1.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-2.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-3.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+                <div class="shared-blog-cards-grid-item">
+                  <div class="shared-blog-cards-grid-item-img">
+                    <img
+                      src="./public/images/global/blog-placeholder-4.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <a href="#" class="shared-blog-cards-grid-item-title"
+                    >نام مقاله</a
+                  >
+                  <div class="shared-blog-cards-grid-item-desc">
+                    این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                    شامل حروفچینی دستاوردهای اصلی، و جوابگوی این صورت می توان
+                    امید داشت که تمام و دشواری موجود
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="blog-hero-sidebar">
+                <p class="blog-hero-sidebar-title md-hidden">جستجو</p>
+                <label for="searchbar" class="shared-search-label md-hidden">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    type="text"
+                    class="shared-search"
+                    name="searchbar"
+                    id="searchbar"
+                    placeholder="جستجو..."
+                  />
+                </label>
+
+                <div class="blog-hero-sidebar-seperator"></div>
+                <p class="blog-hero-sidebar-title">دسته بندی</p>
+                <div class="blog-hero-sidebar-container">
+                  <p class="blog-hero-sidebar-category">
+                    دسته بندی
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </p>
+
+                  <p class="blog-hero-sidebar-category">
+                    دسته بندی
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </p>
+
+                  <p class="blog-hero-sidebar-category">
+                    دسته بندی
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </p>
+
+                  <p class="blog-hero-sidebar-category">
+                    دسته بندی
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </p>
+                </div>
+
+                <div class="blog-hero-sidebar-seperator"></div>
+
+                <p class="blog-hero-sidebar-title">مقاله های اخیر</p>
+
+                <a class="blog-hero-sidebar-blog-item">
+                  <div class="blog-hero-sidebar-blog-item-img">
+                    <img
+                      src="./public/images/blog/blog-item-1.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <div class="blog-hero-sidebar-blog-item-content">
+                    <p class="blog-hero-sidebar-blog-item-title">نام مقاله</p>
+                    <p class="blog-hero-sidebar-blog-item-desc">
+                      این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                      راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                      شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                    </p>
+                  </div>
+                </a>
+
+                <a class="blog-hero-sidebar-blog-item">
+                  <div class="blog-hero-sidebar-blog-item-img">
+                    <img
+                      src="./public/images/blog/blog-item-2.webp"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <div class="blog-hero-sidebar-blog-item-content">
+                    <p class="blog-hero-sidebar-blog-item-title">نام مقاله</p>
+                    <p class="blog-hero-sidebar-blog-item-desc">
+                      این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                      راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                      شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                    </p>
+                  </div>
+                </a>
+
+                <a class="blog-hero-sidebar-blog-item">
+                  <div class="blog-hero-sidebar-blog-item-img">
+                    <img
+                      src="./public/images/blog/blog-item-1.jpg"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <div class="blog-hero-sidebar-blog-item-content">
+                    <p class="blog-hero-sidebar-blog-item-title">نام مقاله</p>
+                    <p class="blog-hero-sidebar-blog-item-desc">
+                      این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                      راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                      شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                    </p>
+                  </div>
+                </a>
+
+                <a class="blog-hero-sidebar-blog-item">
+                  <div class="blog-hero-sidebar-blog-item-img">
+                    <img
+                      src="./public/images/blog/blog-item-2.webp"
+                      alt=""
+                      title=""
+                    />
+                  </div>
+                  <div class="blog-hero-sidebar-blog-item-content">
+                    <p class="blog-hero-sidebar-blog-item-title">نام مقاله</p>
+                    <p class="blog-hero-sidebar-blog-item-desc">
+                      این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                      راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
+                      شامل حروفچینی دستاوردهای اصلی، و جوابگوی
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="bg-seperator"></div>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-details">
+          <img
+            class="footer-img"
+            src="./public/images/global/fadak-logo.svg"
+            alt=""
+            title=""
+          />
+          <p class="footer-desc">
+            این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+            دستاوردهای اصلی، و جوابگوی این صورت می توان امید داشت که تمام و
+            دشواری موجود .
+          </p>
+          <div class="footer-call-info">
+            <div class="footer-call-info-box">
+              <i class="fa fa-phone"></i>
+              <div>
+                <a href="#">
+                  شماره تماس
+                  <br />
+                  00905419094990
+                </a>
+              </div>
+            </div>
+            <div class="footer-call-info-box">
+              <i class="fa fa-phone"></i>
+              <div>
+                <a href="#">
+                  شماره تماس
+                  <br />
+                  00905419094990
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-icons">
+            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-title">دسترسی سریع</p>
+          <ul>
+            <li>
+              <a href=""> خانه </a>
+            </li>
+            <li>
+              <a href=""> درباره ما </a>
+            </li>
+            <li>
+              <a href=""> همکاری با ما </a>
+            </li>
+            <li>
+              <a href=""> بلاگ </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-title">محصولات پرطرفدار</p>
+          <ul>
+            <li>
+              <a href=""> بستنی وانیلی </a>
+            </li>
+            <li>
+              <a href=""> بستنی رعفرانی </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز ویژه فدک </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ مغز دار </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p class="footer-links-title">محصولات پرطرفدار</p>
+          <ul>
+            <li>
+              <a href=""> بستنی وانیلی </a>
+            </li>
+            <li>
+              <a href=""> بستنی رعفرانی </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز ویژه فدک </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ پر مغز </a>
+            </li>
+            <li>
+              <a href=""> سه رنگ مغز دار </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        class="footer-abs-image"
+        src="./public/images/global/shape-footer.svg"
+        alt=""
+        title=""
+      />
+
+      <p class="footer-copy">
+        طراحی و پیاده سازی توسط شرکت <a href="#">همکاره</a> می باشد.
+      </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInputs = document.querySelectorAll(".shared-search");
+
+        searchInputs.forEach((searchInput) => {
+          const resultsContainer = searchInput.nextElementSibling;
+
+          const searchResults = [
+            "Result 1",
+            "Result 2",
+            "Result 3",
+            "Result 4",
+            "Result 5",
+          ]; // Replace with actual search results
+
+          searchInput.addEventListener("input", () => {
+            const query = searchInput.value.toLowerCase();
+            resultsContainer.innerHTML = "";
+
+            if (query) {
+              const filteredResults = searchResults.filter((result) =>
+                result.toLowerCase().includes(query)
+              );
+
+              filteredResults.forEach((result) => {
+                const resultItem = document.createElement("div");
+                resultItem.className = "search-result-item";
+                resultItem.textContent = result;
+                resultsContainer.appendChild(resultItem);
+              });
+            }
+          });
+
+          searchInput.addEventListener("focus", () => {
+            resultsContainer.classList.add("expanded");
+          });
+
+          searchInput.addEventListener("blur", () => {
+            setTimeout(() => {
+              resultsContainer.classList.remove("expanded");
+            }, 100); // Timeout to allow clicking on results before collapsing
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
