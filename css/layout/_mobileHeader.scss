@@ -1,10 +1,20 @@
 @import "../base/variables";
 
 .mobile-header {
+  // when clinet offset is 0
   padding: 1rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &.scrolled {
+    //when clinet offset is more than 0
+    position: fixed;
+    z-index: 9999;
+    background: white;
+    width: 100%;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.15);
+  }
 
   & > * {
     width: 33%;
@@ -13,7 +23,6 @@
   &-menu-opener {
     color: $light_blue_color;
     i {
-
       border: 1px solid $primary_color;
       padding: 0.5rem;
       border-radius: 50%;
@@ -42,7 +51,8 @@
       font-size: 1.2em;
       color: $light_blue_color;
     }
-    i.fa-user , i.fa-cart-shopping {
+    i.fa-user,
+    i.fa-cart-shopping {
       border: 1px solid $primary_color;
       padding: 0.5rem;
       border-radius: 50%;

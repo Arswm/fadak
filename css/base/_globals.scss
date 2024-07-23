@@ -1505,6 +1505,16 @@ a {
     gap: 0.5rem;
 
   }
+
+  &-pay{
+    width: 100%;
+    color: $white_color;
+    padding:.4rem 1rem;
+    border-radius: 1rem;
+    background-color: $primary_color;
+    display: block;
+    text-align: center;
+  }
 }
 
 

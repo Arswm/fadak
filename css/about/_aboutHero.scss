@@ -1,0 +1,37 @@
+.about-hero {
+  * {
+    text-align: justify;
+  }
+
+  &-side {
+    &-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      border-radius: 1000px 1000px 10px 10px;
+      img {
+        display: block;
+        object-fit: center;
+        object-position: center;
+      }
+    }
+  }
+
+  &-desc {
+    max-width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    &-desc {
+      max-width: 100%;
+    }
+    &-side-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

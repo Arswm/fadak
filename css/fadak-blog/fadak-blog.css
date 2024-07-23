@@ -16,4 +16,9 @@
 }
 .fadak-blog-intro-desc {
   color: #424242;
+}
+@media (max-width: 992px) {
+  .fadak-blog-intro-image {
+    border-radius: 1000px 1000px 0 0;
+  }
 }/*# sourceMappingURL=fadak-blog.css.map */

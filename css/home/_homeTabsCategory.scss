@@ -115,5 +115,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr
     }
+
+    &-category{
+      gap: 1.5rem;
+    }
   }
 }

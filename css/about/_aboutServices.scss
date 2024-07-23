@@ -1,0 +1,59 @@
+@import "../base/variables";
+.about-services {
+  &-grid {
+    background: #f5f9fb;
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 2rem 0;
+      gap: 1rem;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+
+      &-img {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        img {
+          display: block;
+          object-fit: contain;
+          object-position: center;
+          overflow: hidden;
+        }
+      }
+
+      &-title {
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+      &-desc {
+        text-align: justify;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-grid {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+      }
+
+      &-item {
+          justify-content: center;
+          align-items: center;
+          }
+    }
+  }
+}

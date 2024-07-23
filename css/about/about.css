@@ -1,0 +1,105 @@
+.about-hero * {
+  text-align: justify;
+}
+.about-hero-side-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 1000px 1000px 10px 10px;
+}
+.about-hero-side-img img {
+  display: block;
+  -o-object-fit: center;
+     object-fit: center;
+  -o-object-position: center;
+     object-position: center;
+}
+.about-hero-desc {
+  max-width: 90%;
+}
+@media (max-width: 768px) {
+  .about-hero-desc {
+    max-width: 100%;
+  }
+  .about-hero-side-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about-services-grid {
+  background: #f5f9fb;
+}
+.about-services-grid .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.about-services-grid-item {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+.about-services-grid-item-img {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.about-services-grid-item-img img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+.about-services-grid-item-title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.about-services-grid-item-desc {
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .about-services-grid .container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .about-services-grid-item {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about-medals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.about-medals-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-medals-grid-item img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 768px) {
+  .about-medals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=about.css.map */
