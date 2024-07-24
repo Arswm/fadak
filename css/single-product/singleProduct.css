@@ -1,0 +1,111 @@
+.product-hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.product-hero-product-image {
+  max-width: 60%;
+  border-radius: 1000px 1000px 40px 40px;
+}
+.product-hero-underline-image {
+  min-width: 70%;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+.product-hero-desc {
+  text-align: justify;
+  color: #424242;
+}
+
+.product-recipe-item {
+  display: flex;
+  align-items: center;
+}
+.product-recipe {
+  display: flex;
+  flex-direction: column;
+}
+.product-recipe-content {
+  flex-basis: 50%;
+}
+.product-recipe-content-title {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+}
+.product-recipe-content-desc {
+  color: #424242;
+}
+.product-recipe-img {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+.product .shared-title {
+  margin-bottom: 0;
+}
+
+.shared-accordion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.shared-accordion-item {
+  border: 1px solid #1c39bb;
+  color: #424242;
+  padding: 1rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.shared-accordion-item i {
+  color: #0067a5;
+}
+.shared-accordion-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  position: relative;
+}
+.shared-accordion-item-title::before {
+  content: "";
+  position: absolute;
+  right: -1rem;
+  height: 80%;
+  width: 3px;
+  background-color: #1c39bb;
+  border-radius: 20px;
+}
+.shared-accordion-item-title i.fa-plus {
+  display: block;
+}
+.shared-accordion-item-title i.fa-minus {
+  display: none;
+}
+.shared-accordion-item-desc {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+}
+.shared-accordion-item.active .shared-accordion-item-title {
+  margin-bottom: 1rem;
+}
+.shared-accordion-item.active .shared-accordion-item-title i.fa-plus {
+  display: none;
+}
+.shared-accordion-item.active .shared-accordion-item-title i.fa-minus {
+  display: block;
+}
+.shared-accordion-item.active .shared-accordion-item-desc {
+  opacity: 1;
+  visibility: visible;
+  max-height: 800px;
+  transition: 0.3s;
+}/*# sourceMappingURL=singleProduct.css.map */

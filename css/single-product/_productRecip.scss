@@ -1,0 +1,34 @@
+@import "../base/variables";
+.product {
+  &-recipe-item {
+    display: flex;
+    align-items: center;
+  }
+  &-recipe {
+    display: flex;
+    flex-direction: column;
+    &-content {
+      flex-basis: 50%;
+
+      &-title {
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-bottom: 1rem;
+      }
+
+      &-desc {
+        color: $text_color;
+      }
+    }
+
+    &-img {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .shared-title {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../base/variables";
+.product-hero {
+ 
+    &-container {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;  
+       margin-bottom: 2rem;
+     }
+   
+     &-product-image {
+       max-width: 60%;
+       border-radius: 1000px 1000px 40px 40px;
+     }
+   
+     &-underline-image{
+       min-width: 70%;
+       margin-top: -1rem;
+       margin-bottom: 2rem;
+     }
+     &-desc{
+       text-align: justify;
+       color: $text_color;
+     }
+
+
+}
+   

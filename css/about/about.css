@@ -8,7 +8,7 @@
   align-items: center;
   margin-bottom: 2rem;
   overflow: hidden;
-  border-radius: 1000px 1000px 10px 10px;
+  border-radius: 1000px 1000px 40px 40px;
 }
 .about-hero-side-img img {
   display: block;
