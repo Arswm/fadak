@@ -344,6 +344,10 @@ input[type="number"] {
   }
 }
 
+.h-full{
+  height: 100% !important;
+}
+
 .align-items {
   &-center {
     align-items: center !important;
@@ -1229,7 +1233,9 @@ a {
     border-radius: 50%;
   }
 }
-
+.fa-close{
+  cursor: pointer;
+}
 //   positions
 .position {
   &-relative {

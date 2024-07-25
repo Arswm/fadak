@@ -1,5 +1,5 @@
 .home-tabs {
-  overflow: hidden;
+  // overflow: hidden;
 
   &-category {
     padding: 1rem 2rem;
@@ -81,43 +81,114 @@
         justify-content: space-between;
         padding: 0.5rem 1rem 1rem;
         align-items: end;
+        flex-direction: column;
+        gap: 0.7rem;
       }
 
       &-price {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         gap: 0.5rem;
         color: $light_blue_color;
+        width: 100%;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &-downbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        select {
+          border: 1px solid $primary_color;
+          background: transparent;
+          padding: 0.2rem 0.5rem;
+          border-radius: 7px;
+          color: $primary_color;
+          font-family: "yekan";
+          font-weight: 700;
+          min-height: 40px;
+          font-size: 1.1em;
+
+          option {
+            background-color: white;
+            font-family: "yekan";
+          }
+        }
+
+        i {
+          border: 1px solid $primary_color;
+          border-radius: 4px;
+          color: $primary_color;
+          font-size: 1.1em;
+          padding: 0.4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          &.active {
+            display: none;
+          }
+        }
       }
 
       &-count {
-        border: 1px solid blue;
-        padding: 0.2rem 1rem;
+        display: none;
+        border: 1px solid $primary_color;
         border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2em;
+        max-height: 40px;
 
         &-plus {
           color: $primary_color;
+          cursor: pointer;
+          padding: 0 0.75rem;
         }
 
         &-minus {
           color: #e0372c;
+          cursor: pointer;
+          padding: 0 0.75rem;
         }
 
         &-number {
           color: $primary_color;
+          font-size: 0.7em;
         }
+        &.active {
+          display: flex !important;
+        }
+      }
+
+      &-badge {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
       }
     }
   }
 
-  @media(max-width:768px){
+  @media (max-width: 768px) {
     &-content.active {
       display: grid;
-      grid-template-columns: 1fr 1fr
+      grid-template-columns: 1fr 1fr;
     }
 
-    &-category{
+    &-category {
       gap: 1.5rem;
+      justify-content: center;
+      gap: 3.5rem;
     }
   }
 }

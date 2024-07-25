@@ -18,9 +18,6 @@
      object-fit: cover;
 }
 
-.home-tabs {
-  overflow: hidden;
-}
 .home-tabs-category {
   padding: 1rem 2rem;
   border: 1px solid #bfdedb;
@@ -93,26 +90,88 @@
   justify-content: space-between;
   padding: 0.5rem 1rem 1rem;
   align-items: end;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 .home-tabs-content-item-price {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 0.5rem;
   color: #0067a5;
+  width: 100%;
+}
+.home-tabs-content-item-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.home-tabs-content-item-downbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-tabs-content-item-downbar select {
+  border: 1px solid #1c39bb;
+  background: transparent;
+  padding: 0.2rem 0.5rem;
+  border-radius: 7px;
+  color: #1c39bb;
+  font-family: "yekan";
+  font-weight: 700;
+  min-height: 40px;
+  font-size: 1.1em;
+}
+.home-tabs-content-item-downbar select option {
+  background-color: white;
+  font-family: "yekan";
+}
+.home-tabs-content-item-downbar i {
+  border: 1px solid #1c39bb;
+  border-radius: 4px;
+  color: #1c39bb;
+  font-size: 1.1em;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home-tabs-content-item-downbar i.active {
+  display: none;
 }
 .home-tabs-content-item-count {
-  border: 1px solid blue;
-  padding: 0.2rem 1rem;
+  display: none;
+  border: 1px solid #1c39bb;
   border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  max-height: 40px;
 }
 .home-tabs-content-item-count-plus {
   color: #1c39bb;
+  cursor: pointer;
+  padding: 0 0.75rem;
 }
 .home-tabs-content-item-count-minus {
   color: #e0372c;
+  cursor: pointer;
+  padding: 0 0.75rem;
 }
 .home-tabs-content-item-count-number {
   color: #1c39bb;
+  font-size: 0.7em;
+}
+.home-tabs-content-item-count.active {
+  display: flex !important;
+}
+.home-tabs-content-item-badge {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .home-tabs-content.active {
@@ -121,6 +180,8 @@
   }
   .home-tabs-category {
     gap: 1.5rem;
+    justify-content: center;
+    gap: 3.5rem;
   }
 }
 
